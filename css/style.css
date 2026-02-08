@@ -1,0 +1,48 @@
+ body {
+    margin: 0;
+    height: 100vh;
+    background: url("bg.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+  }
+
+  /* Жижиг card */
+  .card-preview {
+    width: 150px;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+
+  .card-preview:hover {
+    transform: scale(1.1);
+  }
+
+  /* Dark overlay */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Том card */
+  .card-big {
+    width: 500px;
+    height: 500px;
+    background: #f6c1c6;
+    border: 12px solid #d96a63;
+    box-shadow: inset 0 0 0 6px #f2a3a8;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+  }
