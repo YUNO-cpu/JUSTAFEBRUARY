@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Love Letter</title>
+</head>
+<body>
+
+<!-- жижиг харагдах захидал -->
+<img src="card.png" class="card-preview" onclick="openCard()">
+
+<!-- popup -->
+<div class="overlay" id="overlay" onclick="closeCard()">
+  <div class="card-big" onclick="event.stopPropagation()">
+    <div class="close" onclick="closeCard()">✖</div>
+    <!-- энд дотор нь чиний зураг/текст -->
+  </div>
+</div>
+
+<script>
+function openCard() {
+  document.getElementById("overlay").style.display = "flex";
+}
+
+function closeCard() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
